@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		776805172ABA826300F97055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805162ABA826300F97055 /* AppDelegate.swift */; };
+		776805192ABA826300F97055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805182ABA826300F97055 /* SceneDelegate.swift */; };
+		7768051E2ABA826300F97055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7768051C2ABA826300F97055 /* Main.storyboard */; };
+		776805212ABA826300F97055 /* VideoHumanDetector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7768051F2ABA826300F97055 /* VideoHumanDetector.xcdatamodeld */; };
+		776805232ABA826500F97055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776805222ABA826500F97055 /* Assets.xcassets */; };
+		776805262ABA826500F97055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776805242ABA826500F97055 /* LaunchScreen.storyboard */; };
+		776805312ABA826500F97055 /* VideoHumanDetectorPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805302ABA826500F97055 /* VideoHumanDetectorPresenterTests.swift */; };
+		7768053B2ABA826500F97055 /* VideoHumanDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768053A2ABA826500F97055 /* VideoHumanDetectorUITests.swift */; };
+		7768053D2ABA826500F97055 /* VideoHumanDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768053C2ABA826500F97055 /* VideoHumanDetectorUITestsLaunchTests.swift */; };
+		7768054C2ABA886A00F97055 /* LibraryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768054B2ABA886A00F97055 /* LibraryPageViewController.swift */; };
+		7768054E2ABA889900F97055 /* LibraryPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768054D2ABA889900F97055 /* LibraryPagePresenter.swift */; };
+		776805512ABA96E100F97055 /* CollectionIdentifiableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805502ABA96E100F97055 /* CollectionIdentifiableExtension.swift */; };
+		776805562ABA9F2A00F97055 /* AssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805542ABA9F2A00F97055 /* AssetCollectionViewCell.swift */; };
+		776805572ABA9F2B00F97055 /* AssetCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776805552ABA9F2A00F97055 /* AssetCollectionViewCell.xib */; };
+		776805602ABAD6E500F97055 /* VideoProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7768055E2ABAD6E500F97055 /* VideoProcessingViewController.swift */; };
+		776805612ABAD6E500F97055 /* VideoProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7768055F2ABAD6E500F97055 /* VideoProcessingViewController.xib */; };
+		776805632ABAD7AF00F97055 /* VideoProcessingPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776805622ABAD7AF00F97055 /* VideoProcessingPagePresenter.swift */; };
+		778203022ABD2E7800860031 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778203012ABD2E7800860031 /* UIColorExtension.swift */; };
+		778203052ABE2A0000860031 /* KFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778203042ABE2A0000860031 /* KFileManager.swift */; };
+		778203082ABF79BB00860031 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778203062ABF79BB00860031 /* CollectionHeaderView.swift */; };
+		77B963182ABB917F00613E63 /* MLDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B963172ABB917F00613E63 /* MLDetector.swift */; };
+		77B9631A2ABB91D400613E63 /* HumanDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B963192ABB91D400613E63 /* HumanDetector.swift */; };
+		77B963242ABBE58200613E63 /* ImageProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B963222ABBE58200613E63 /* ImageProcessingViewController.swift */; };
+		77B963252ABBE58200613E63 /* ImageProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B963232ABBE58200613E63 /* ImageProcessingViewController.xib */; };
+		77B963272ABBE5E100613E63 /* ImageProcessingPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B963262ABBE5E100613E63 /* ImageProcessingPagePresenter.swift */; };
+		77FCF1782AC0047C0081114A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF1772AC0047C0081114A /* DateExtension.swift */; };
+		77FCF17B2AC0F1210081114A /* CollectionSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF17A2AC0F1210081114A /* CollectionSections.swift */; };
+		77FCF17F2AC0FB130081114A /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF17D2AC0FB130081114A /* ImageViewController.swift */; };
+		77FCF1802AC0FB130081114A /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FCF17E2AC0FB130081114A /* ImageViewController.xib */; };
+		77FCF1822AC11B9A0081114A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF1812AC11B9A0081114A /* UIViewControllerExtension.swift */; };
+		77FCF1842AC1EF820081114A /* MockLibraryPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF1832AC1EF820081114A /* MockLibraryPagePresenter.swift */; };
+		77FCF1862AC1F0A50081114A /* MockLibraryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCF1852AC1F0A50081114A /* MockLibraryPageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7768052D2ABA826500F97055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7768050B2ABA826300F97055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776805122ABA826300F97055;
+			remoteInfo = LumaHumanDetector;
+		};
+		776805372ABA826500F97055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7768050B2ABA826300F97055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776805122ABA826300F97055;
+			remoteInfo = LumaHumanDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		776805132ABA826300F97055 /* VideoHumanDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoHumanDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		776805162ABA826300F97055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		776805182ABA826300F97055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7768051D2ABA826300F97055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		776805202ABA826300F97055 /* LumaHumanDetector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LumaHumanDetector.xcdatamodel; sourceTree = "<group>"; };
+		776805222ABA826500F97055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		776805252ABA826500F97055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		776805272ABA826500F97055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7768052C2ABA826500F97055 /* VideoHumanDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoHumanDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776805302ABA826500F97055 /* VideoHumanDetectorPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHumanDetectorPresenterTests.swift; sourceTree = "<group>"; };
+		776805362ABA826500F97055 /* VideoHumanDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoHumanDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7768053A2ABA826500F97055 /* VideoHumanDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHumanDetectorUITests.swift; sourceTree = "<group>"; };
+		7768053C2ABA826500F97055 /* VideoHumanDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHumanDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7768054B2ABA886A00F97055 /* LibraryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPageViewController.swift; sourceTree = "<group>"; };
+		7768054D2ABA889900F97055 /* LibraryPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPagePresenter.swift; sourceTree = "<group>"; };
+		776805502ABA96E100F97055 /* CollectionIdentifiableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionIdentifiableExtension.swift; sourceTree = "<group>"; };
+		776805542ABA9F2A00F97055 /* AssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewCell.swift; sourceTree = "<group>"; };
+		776805552ABA9F2A00F97055 /* AssetCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCollectionViewCell.xib; sourceTree = "<group>"; };
+		7768055E2ABAD6E500F97055 /* VideoProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingViewController.swift; sourceTree = "<group>"; };
+		7768055F2ABAD6E500F97055 /* VideoProcessingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoProcessingViewController.xib; sourceTree = "<group>"; };
+		776805622ABAD7AF00F97055 /* VideoProcessingPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingPagePresenter.swift; sourceTree = "<group>"; };
+		778203012ABD2E7800860031 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		778203042ABE2A0000860031 /* KFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFileManager.swift; sourceTree = "<group>"; };
+		778203062ABF79BB00860031 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		77B963172ABB917F00613E63 /* MLDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDetector.swift; sourceTree = "<group>"; };
+		77B963192ABB91D400613E63 /* HumanDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDetector.swift; sourceTree = "<group>"; };
+		77B963222ABBE58200613E63 /* ImageProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingViewController.swift; sourceTree = "<group>"; };
+		77B963232ABBE58200613E63 /* ImageProcessingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageProcessingViewController.xib; sourceTree = "<group>"; };
+		77B963262ABBE5E100613E63 /* ImageProcessingPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingPagePresenter.swift; sourceTree = "<group>"; };
+		77FCF1772AC0047C0081114A /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		77FCF17A2AC0F1210081114A /* CollectionSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSections.swift; sourceTree = "<group>"; };
+		77FCF17D2AC0FB130081114A /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		77FCF17E2AC0FB130081114A /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		77FCF1812AC11B9A0081114A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		77FCF1832AC1EF820081114A /* MockLibraryPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLibraryPagePresenter.swift; sourceTree = "<group>"; };
+		77FCF1852AC1F0A50081114A /* MockLibraryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLibraryPageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		776805102ABA826300F97055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776805292ABA826500F97055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776805332ABA826500F97055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7768050A2ABA826300F97055 = {
+			isa = PBXGroup;
+			children = (
+				776805152ABA826300F97055 /* VideoHumanDetector */,
+				7768052F2ABA826500F97055 /* VideoHumanDetectorTests */,
+				776805392ABA826500F97055 /* VideoHumanDetectorUITests */,
+				776805142ABA826300F97055 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		776805142ABA826300F97055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776805132ABA826300F97055 /* VideoHumanDetector.app */,
+				7768052C2ABA826500F97055 /* VideoHumanDetectorTests.xctest */,
+				776805362ABA826500F97055 /* VideoHumanDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776805152ABA826300F97055 /* VideoHumanDetector */ = {
+			isa = PBXGroup;
+			children = (
+				776805492ABA839600F97055 /* LibraryPage */,
+				77FCF17C2AC0FAD20081114A /* ImageViewPage */,
+				77FCF1792AC0EE9C0081114A /* Detectors */,
+				778203032ABE292A00860031 /* Managers */,
+				778203002ABD2E6300860031 /* Extensions */,
+				77B963212ABBE55400613E63 /* ImageProcessingPage */,
+				776805592ABAA9BF00F97055 /* VideoProcessingPage */,
+				776805162ABA826300F97055 /* AppDelegate.swift */,
+				776805182ABA826300F97055 /* SceneDelegate.swift */,
+				7768051C2ABA826300F97055 /* Main.storyboard */,
+				776805222ABA826500F97055 /* Assets.xcassets */,
+				776805242ABA826500F97055 /* LaunchScreen.storyboard */,
+				776805272ABA826500F97055 /* Info.plist */,
+				7768051F2ABA826300F97055 /* VideoHumanDetector.xcdatamodeld */,
+			);
+			path = VideoHumanDetector;
+			sourceTree = "<group>";
+		};
+		7768052F2ABA826500F97055 /* VideoHumanDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				776805302ABA826500F97055 /* VideoHumanDetectorPresenterTests.swift */,
+				77FCF1832AC1EF820081114A /* MockLibraryPagePresenter.swift */,
+				77FCF1852AC1F0A50081114A /* MockLibraryPageViewController.swift */,
+			);
+			path = VideoHumanDetectorTests;
+			sourceTree = "<group>";
+		};
+		776805392ABA826500F97055 /* VideoHumanDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7768053A2ABA826500F97055 /* VideoHumanDetectorUITests.swift */,
+				7768053C2ABA826500F97055 /* VideoHumanDetectorUITestsLaunchTests.swift */,
+			);
+			path = VideoHumanDetectorUITests;
+			sourceTree = "<group>";
+		};
+		776805492ABA839600F97055 /* LibraryPage */ = {
+			isa = PBXGroup;
+			children = (
+				7768054F2ABA967A00F97055 /* CollectionCells */,
+				7768054B2ABA886A00F97055 /* LibraryPageViewController.swift */,
+				7768054D2ABA889900F97055 /* LibraryPagePresenter.swift */,
+				77FCF17A2AC0F1210081114A /* CollectionSections.swift */,
+			);
+			path = LibraryPage;
+			sourceTree = "<group>";
+		};
+		7768054F2ABA967A00F97055 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				776805502ABA96E100F97055 /* CollectionIdentifiableExtension.swift */,
+				776805542ABA9F2A00F97055 /* AssetCollectionViewCell.swift */,
+				776805552ABA9F2A00F97055 /* AssetCollectionViewCell.xib */,
+				778203062ABF79BB00860031 /* CollectionHeaderView.swift */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		776805592ABAA9BF00F97055 /* VideoProcessingPage */ = {
+			isa = PBXGroup;
+			children = (
+				7768055E2ABAD6E500F97055 /* VideoProcessingViewController.swift */,
+				7768055F2ABAD6E500F97055 /* VideoProcessingViewController.xib */,
+				776805622ABAD7AF00F97055 /* VideoProcessingPagePresenter.swift */,
+			);
+			path = VideoProcessingPage;
+			sourceTree = "<group>";
+		};
+		778203002ABD2E6300860031 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				778203012ABD2E7800860031 /* UIColorExtension.swift */,
+				77FCF1772AC0047C0081114A /* DateExtension.swift */,
+				77FCF1812AC11B9A0081114A /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		778203032ABE292A00860031 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				778203042ABE2A0000860031 /* KFileManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		77B963212ABBE55400613E63 /* ImageProcessingPage */ = {
+			isa = PBXGroup;
+			children = (
+				77B963222ABBE58200613E63 /* ImageProcessingViewController.swift */,
+				77B963232ABBE58200613E63 /* ImageProcessingViewController.xib */,
+				77B963262ABBE5E100613E63 /* ImageProcessingPagePresenter.swift */,
+			);
+			path = ImageProcessingPage;
+			sourceTree = "<group>";
+		};
+		77FCF1792AC0EE9C0081114A /* Detectors */ = {
+			isa = PBXGroup;
+			children = (
+				77B963172ABB917F00613E63 /* MLDetector.swift */,
+				77B963192ABB91D400613E63 /* HumanDetector.swift */,
+			);
+			path = Detectors;
+			sourceTree = "<group>";
+		};
+		77FCF17C2AC0FAD20081114A /* ImageViewPage */ = {
+			isa = PBXGroup;
+			children = (
+				77FCF17D2AC0FB130081114A /* ImageViewController.swift */,
+				77FCF17E2AC0FB130081114A /* ImageViewController.xib */,
+			);
+			path = ImageViewPage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		776805122ABA826300F97055 /* VideoHumanDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776805402ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetector" */;
+			buildPhases = (
+				7768050F2ABA826300F97055 /* Sources */,
+				776805102ABA826300F97055 /* Frameworks */,
+				776805112ABA826300F97055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoHumanDetector;
+			productName = LumaHumanDetector;
+			productReference = 776805132ABA826300F97055 /* VideoHumanDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7768052B2ABA826500F97055 /* VideoHumanDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776805432ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetectorTests" */;
+			buildPhases = (
+				776805282ABA826500F97055 /* Sources */,
+				776805292ABA826500F97055 /* Frameworks */,
+				7768052A2ABA826500F97055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7768052E2ABA826500F97055 /* PBXTargetDependency */,
+			);
+			name = VideoHumanDetectorTests;
+			productName = LumaHumanDetectorTests;
+			productReference = 7768052C2ABA826500F97055 /* VideoHumanDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		776805352ABA826500F97055 /* VideoHumanDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776805462ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetectorUITests" */;
+			buildPhases = (
+				776805322ABA826500F97055 /* Sources */,
+				776805332ABA826500F97055 /* Frameworks */,
+				776805342ABA826500F97055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776805382ABA826500F97055 /* PBXTargetDependency */,
+			);
+			name = VideoHumanDetectorUITests;
+			productName = LumaHumanDetectorUITests;
+			productReference = 776805362ABA826500F97055 /* VideoHumanDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7768050B2ABA826300F97055 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					776805122ABA826300F97055 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7768052B2ABA826500F97055 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 776805122ABA826300F97055;
+					};
+					776805352ABA826500F97055 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 776805122ABA826300F97055;
+					};
+				};
+			};
+			buildConfigurationList = 7768050E2ABA826300F97055 /* Build configuration list for PBXProject "VideoHumanDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7768050A2ABA826300F97055;
+			productRefGroup = 776805142ABA826300F97055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				776805122ABA826300F97055 /* VideoHumanDetector */,
+				7768052B2ABA826500F97055 /* VideoHumanDetectorTests */,
+				776805352ABA826500F97055 /* VideoHumanDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		776805112ABA826300F97055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776805262ABA826500F97055 /* LaunchScreen.storyboard in Resources */,
+				776805232ABA826500F97055 /* Assets.xcassets in Resources */,
+				77B963252ABBE58200613E63 /* ImageProcessingViewController.xib in Resources */,
+				7768051E2ABA826300F97055 /* Main.storyboard in Resources */,
+				77FCF1802AC0FB130081114A /* ImageViewController.xib in Resources */,
+				776805612ABAD6E500F97055 /* VideoProcessingViewController.xib in Resources */,
+				776805572ABA9F2B00F97055 /* AssetCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7768052A2ABA826500F97055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776805342ABA826500F97055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7768050F2ABA826300F97055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B963182ABB917F00613E63 /* MLDetector.swift in Sources */,
+				776805512ABA96E100F97055 /* CollectionIdentifiableExtension.swift in Sources */,
+				776805212ABA826300F97055 /* VideoHumanDetector.xcdatamodeld in Sources */,
+				776805172ABA826300F97055 /* AppDelegate.swift in Sources */,
+				776805192ABA826300F97055 /* SceneDelegate.swift in Sources */,
+				778203052ABE2A0000860031 /* KFileManager.swift in Sources */,
+				77B9631A2ABB91D400613E63 /* HumanDetector.swift in Sources */,
+				776805562ABA9F2A00F97055 /* AssetCollectionViewCell.swift in Sources */,
+				776805632ABAD7AF00F97055 /* VideoProcessingPagePresenter.swift in Sources */,
+				778203082ABF79BB00860031 /* CollectionHeaderView.swift in Sources */,
+				7768054E2ABA889900F97055 /* LibraryPagePresenter.swift in Sources */,
+				776805602ABAD6E500F97055 /* VideoProcessingViewController.swift in Sources */,
+				77FCF1822AC11B9A0081114A /* UIViewControllerExtension.swift in Sources */,
+				778203022ABD2E7800860031 /* UIColorExtension.swift in Sources */,
+				77FCF17B2AC0F1210081114A /* CollectionSections.swift in Sources */,
+				7768054C2ABA886A00F97055 /* LibraryPageViewController.swift in Sources */,
+				77B963242ABBE58200613E63 /* ImageProcessingViewController.swift in Sources */,
+				77FCF17F2AC0FB130081114A /* ImageViewController.swift in Sources */,
+				77FCF1782AC0047C0081114A /* DateExtension.swift in Sources */,
+				77B963272ABBE5E100613E63 /* ImageProcessingPagePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776805282ABA826500F97055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FCF1862AC1F0A50081114A /* MockLibraryPageViewController.swift in Sources */,
+				776805312ABA826500F97055 /* VideoHumanDetectorPresenterTests.swift in Sources */,
+				77FCF1842AC1EF820081114A /* MockLibraryPagePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776805322ABA826500F97055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7768053B2ABA826500F97055 /* VideoHumanDetectorUITests.swift in Sources */,
+				7768053D2ABA826500F97055 /* VideoHumanDetectorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7768052E2ABA826500F97055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776805122ABA826300F97055 /* VideoHumanDetector */;
+			targetProxy = 7768052D2ABA826500F97055 /* PBXContainerItemProxy */;
+		};
+		776805382ABA826500F97055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776805122ABA826300F97055 /* VideoHumanDetector */;
+			targetProxy = 776805372ABA826500F97055 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7768051C2ABA826300F97055 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7768051D2ABA826300F97055 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		776805242ABA826500F97055 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776805252ABA826500F97055 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7768053E2ABA826500F97055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7768053F2ABA826500F97055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776805412ABA826500F97055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoHumanDetector/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "To Edit";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save smart edit result";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use photos/videos for smart edit";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		776805422ABA826500F97055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoHumanDetector/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "To Edit";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save smart edit result";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use photos/videos for smart edit";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		776805442ABA826500F97055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoHumanDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VideoHumanDetector";
+			};
+			name = Debug;
+		};
+		776805452ABA826500F97055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoHumanDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VideoHumanDetector";
+			};
+			name = Release;
+		};
+		776805472ABA826500F97055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoHumanDetector;
+			};
+			name = Debug;
+		};
+		776805482ABA826500F97055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ27DVGF9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds1adr.VideoHumanDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoHumanDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7768050E2ABA826300F97055 /* Build configuration list for PBXProject "VideoHumanDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7768053E2ABA826500F97055 /* Debug */,
+				7768053F2ABA826500F97055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776805402ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776805412ABA826500F97055 /* Debug */,
+				776805422ABA826500F97055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776805432ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776805442ABA826500F97055 /* Debug */,
+				776805452ABA826500F97055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776805462ABA826500F97055 /* Build configuration list for PBXNativeTarget "VideoHumanDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776805472ABA826500F97055 /* Debug */,
+				776805482ABA826500F97055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7768051F2ABA826300F97055 /* VideoHumanDetector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				776805202ABA826300F97055 /* LumaHumanDetector.xcdatamodel */,
+			);
+			currentVersion = 776805202ABA826300F97055 /* LumaHumanDetector.xcdatamodel */;
+			path = VideoHumanDetector.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7768050B2ABA826300F97055 /* Project object */;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ehS-DQ-p10">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="jqx-Gw-fUs">
+            <objects>
+                <navigationController id="ehS-DQ-p10" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" id="P3Y-nH-n6b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iw3-fO-r4E">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C9j-5W-lcx" kind="relationship" relationship="rootViewController" id="yOX-xR-6S0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2S-Kq-gr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="-782"/>
+        </scene>
+        <!--My Library-->
+        <scene sceneID="mie-x5-z6d">
+            <objects>
+                <viewController id="C9j-5W-lcx" customClass="LibraryPageViewController" customModule="VideoHumanDetector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9C-Ru-YVr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BiY-zs-q3h">
+                                <rect key="frame" x="16" y="111" width="361" height="32"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Videos"/>
+                                    <segment title="Pictures"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedValueChanged:" destination="C9j-5W-lcx" eventType="valueChanged" id="F1A-8v-IsL"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Seg-eT-D0q">
+                                <rect key="frame" x="0.0" y="158" width="393" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="caX-qQ-ZUV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WRD-Dy-RJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="i7q-PR-67p">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="C9j-5W-lcx" id="Ydx-9s-Mik"/>
+                                    <outlet property="delegate" destination="C9j-5W-lcx" id="XHp-CC-ZSc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sbv-YQ-gAR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BiY-zs-q3h" firstAttribute="top" secondItem="sbv-YQ-gAR" secondAttribute="top" constant="8" id="79d-ki-OgT"/>
+                            <constraint firstItem="Seg-eT-D0q" firstAttribute="leading" secondItem="sbv-YQ-gAR" secondAttribute="leading" id="EzK-vW-mlh"/>
+                            <constraint firstItem="sbv-YQ-gAR" firstAttribute="trailing" secondItem="BiY-zs-q3h" secondAttribute="trailing" constant="16" id="HUH-Yu-YdO"/>
+                            <constraint firstItem="Seg-eT-D0q" firstAttribute="trailing" secondItem="sbv-YQ-gAR" secondAttribute="trailing" id="Mpv-eC-5LD"/>
+                            <constraint firstItem="sbv-YQ-gAR" firstAttribute="bottom" secondItem="Seg-eT-D0q" secondAttribute="bottom" id="i16-5P-JEd"/>
+                            <constraint firstItem="Seg-eT-D0q" firstAttribute="top" secondItem="BiY-zs-q3h" secondAttribute="bottom" constant="16" id="jQE-91-8JX"/>
+                            <constraint firstItem="BiY-zs-q3h" firstAttribute="leading" secondItem="sbv-YQ-gAR" secondAttribute="leading" constant="16" id="rTG-kn-2cD"/>
+                            <constraint firstItem="Seg-eT-D0q" firstAttribute="top" secondItem="BiY-zs-q3h" secondAttribute="bottom" constant="16" id="t8a-Bq-rPu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Library" id="obi-Ml-xLl"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Seg-eT-D0q" id="RgX-YQ-FQD"/>
+                        <outlet property="segmentedControl" destination="BiY-zs-q3h" id="JSz-Xj-Dr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWX-EQ-cdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.61068702290072" y="-782.3943661971831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
