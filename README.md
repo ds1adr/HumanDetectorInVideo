@@ -1,6 +1,6 @@
 # HumanDetectorInVideo
 
-VNGeneratePersonSegmentationRequest, VNDetectHumanRectanglesRequest Example.
+iOS app. VNGeneratePersonSegmentationRequest, VNDetectHumanRectanglesRequest Example.
 
 ## From Photo (Image)
 Get a photo from Photo Library, then, run VNGeneratePersonSegmentationRequest, VNDetectHumanRectanglesRequest.
